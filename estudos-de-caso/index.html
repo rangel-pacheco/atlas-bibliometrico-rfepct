@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#102b33">
   <meta name="description" content="Atlas digital dos cinco estudos de caso sobre unidades com tipologia agrícola da Rede Federal. Mapa, evidências, indicadores e síntese comparativa, 2021–2026.">
   <title>Atlas dos Estudos de Caso | RFEPCT</title>
@@ -220,7 +221,7 @@ $('#casePanel').querySelectorAll('[data-view]').forEach(b=>b.addEventListener('c
 }
 function initMap(){const host=$('#atlasMap');if(typeof window.L==='undefined'){host.innerHTML='<div class="map-fallback">Mapa indisponível nesta conexão. Selecione os campi pelos botões abaixo.</div>';return;}
   host.innerHTML='';map=L.map(host,{zoomControl:false,scrollWheelZoom:false,attributionControl:true}).setView([-16,-50],4); L.control.zoom({position:'bottomright'}).addTo(map);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{maxZoom:17,attribution:'&copy; OpenStreetMap, &copy; CARTO'}).addTo(map);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>'}).addTo(map);
   D.campuses.forEach(p=>{const marker=L.marker([p.lat,p.lng],{icon:L.divIcon({className:'point-pin',html:'<span class="point-ring"></span>',iconSize:[22,22],iconAnchor:[11,11]})}).addTo(map);marker.bindTooltip(`${p.institution} · ${p.name}`,{direction:'top',offset:[0,-10]});marker.on('click',()=>setCase(p.cat,p.id));markers.set(p.id,marker)});
   const bounds=L.latLngBounds(D.campuses.map(p=>[p.lat,p.lng]));map.fitBounds(bounds,{padding:[35,35],maxZoom:5});highlightMap();setTimeout(()=>map.invalidateSize(),350);
 }
