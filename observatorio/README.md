@@ -1,24 +1,24 @@
 # Observatório da Avaliação Temática RFEPCT
 
-**Versão 1.1 — leitura simplificada (21/11/2026).** Portal para apreciação técnica da SETEC/MEC, sem homologação institucional.
+**Versão 1.2 — apresentação informativa e contato técnico (21/11/2026).**
 
-O arquivo `index.html` funciona autonomamente, sem conexões de rede ou arquivos de microdados.
+## Finalidade
+Portal de leitura simples sobre a avaliação das unidades com tipologia agrícola da Rede Federal. Apresenta panorama nacional, resultados, cinco estudos de caso, seis experiências e onze propostas de melhoria.
 
-## O que mudou
-- Página inicial reorganizada em três conclusões explicadas com linguagem direta.
-- Códigos técnicos retirados das chamadas principais; identificadores e fontes mantidos nos detalhes.
-- Menu principal simplificado e áreas avançadas recolhíveis.
-- Propostas e resultados em fichas acessíveis, com detalhes científicos opcionais.
-- Glossário de termos e siglas, acessível pela barra superior e pelo menu.
-- Indicadores agregados e ressalvas metodológicas preservados.
+**Responsável técnico pela Avaliação Temática:** Rangel Pacheco  
+**Contato:** rangel.pacheco@iffarroupilha.edu.br
 
-## Como acessar
-Abra `index.html` no navegador. Se GitHub Pages estiver habilitado com origem `main/(root)`, o endereço esperado é `https://rangel-pacheco.github.io/atlas-bibliometrico-rfepct/observatorio/`. A disponibilidade do Pages depende das configurações do repositório.
+## Apresentação
+O site concentra-se nas conclusões e explicações destinadas ao leitor. A versão atual não oferece referências a planilhas, repositórios de dados, identificadores internos, localizadores documentais ou navegação por trilhas de origem. Não contém arquivos de microdados ou mecanismos de download. Os resultados apresentados são agregados e descritos em linguagem acessível.
 
-## Integridade e privacidade
-- SHA-256 do `index.html`: `ac212a25db2fcab55c659b6f593212583f01d55db2d8f6355602130993a45f9a`.
-- Não disponibiliza planilhas, respostas individuais, contatos, links para dados de origem nem chamadas externas.
-- As 119 unidades do universo, 109 respostas do questionário e 15 unidades do aprofundamento pertencem a recortes distintos.
-- Recomendações permanecem propostas e resultados estatísticos com dependências de reprodução continuam condicionados.
+O contato é feito por link `mailto:`, sem formulário ou coleta de mensagens pelo portal.
 
-A disponibilização do arquivo em repositório público não significa aprovação da SETEC/MEC.
+## Como visualizar
+Abra `index.html` em um navegador. Com GitHub Pages habilitado para `main/(root)`, o endereço esperado é:
+
+`https://rangel-pacheco.github.io/atlas-bibliometrico-rfepct/observatorio/`
+
+## Limites de interpretação
+As propostas apresentadas são técnicas e não equivalem à adoção de políticas, alocação de recursos ou homologação pela SETEC/MEC. Comparações entre unidades não configuram classificação de mérito nem estabelecem causalidade.
+
+A atualização do arquivo atual não apaga o histórico de versões anteriores do repositório Git. Para restringir o acesso a esse histórico ou à pasta de dados do Atlas, seria necessária medida adicional e específica.
